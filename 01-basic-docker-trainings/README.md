@@ -2,7 +2,7 @@
 
 ## 1. Zarządzanie obrazami i kontenerami w Dockerze
 
-### Pulling an image
+### Pobieranie obrazu
 
 `docker images` sprawdza dostępne obrazy  
 ![Lista dostępnych obrazów Docker](images/1-running-containers/1.png "Lista dostępnych obrazów Docker")
@@ -28,7 +28,7 @@
 `docker rmi $(docker images -a -q)` usuwa wszystkie obrazy  
 ![Usuwanie wszystkich obrazów](images/1-running-containers/8.png "Usuwanie wszystkich obrazów")
 
-### Running our container
+### Uruchamianie kontenerów
 
 `docker run ubuntu:22.04 /bin/echo 'Hello world!'` uruchamia kontener i wyświetla wiadomość  
 ![Uruchomienie kontenera z komunikatem Hello world](images/1-running-containers/9.png "Uruchomienie kontenera z komunikatem Hello world")
@@ -60,7 +60,7 @@
 `docker stop cd29` zatrzymuje kontener  
 ![Zatrzymanie kontenera](images/1-running-containers/21.png "Zatrzymanie kontenera")
 
-### Removing containers
+### Usuwanie kontenerów
 
 `docker rm $(docker ps -a -q)` usuwa wszystkie kontenery  
 ![Usuwanie wszystkich kontenerów](images/1-running-containers/23.png "Usuwanie wszystkich kontenerów")
